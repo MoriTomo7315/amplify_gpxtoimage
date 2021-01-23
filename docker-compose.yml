@@ -1,0 +1,10 @@
+version: "3"
+services:
+  front:
+    build: ./front
+    volumes:
+      - ./front/:/usr/src/app
+    # command: sh -c 'yarn install && yarn start'
+    tty: true
+    ports:
+      - "3000:3000"
